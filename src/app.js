@@ -5,7 +5,7 @@ import productRoutes from "./routes/products.routes";
 const app= express();
 
 //Middlewares
-
+app.use(express.json());
 app.use(morgan('dev'));
 //asigna configuracion a una variable, en este caso al package.json
 app.set("pkg",pkg);
